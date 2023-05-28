@@ -1,0 +1,54 @@
+{% extends 'design/base.html' %}
+{% load static %}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' type='text/css' media='screen' href="{% static 'css/bootstrap.min.css'%}">
+
+    <!-- Template Stylesheet -->
+<link rel='stylesheet' type='text/css' media='screen' href="{% static 'css/style.css'%}">
+    <title>
+    </title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+{% block content %}
+<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+<div class="container-fluid p-0 mb-2">
+    <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="w-100" src="/static/img/imgSlider.jpg" alt="Image">
+            </div>
+            
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<!-- Carousel End -->
+<h1>About Us</h1>
+<p>ARTYPROD est une agence de création graphique. Logo, charte graphique, web design, supports de communication…</p>
+<h2>Conception graphique</h2>
+<p>
+    Parce qu'une image vaut mille mots, SmartNet imagine, conçoit et décline votre charte graphique sur l'ensemble de vos supports internet ou imprimés afin de renforcer votre image de marque.
+
+Artyprod allie ses connaissances et met à votre disposition une équipe aux talents divers et complémentaires afin de mettre en place une image aussi innovante que cohérente.
+Du l'identité visuelle, à la déclinaison et le shooting de vos produits et emballages en passant par l'agencement de vos espaces et création de vos supports web, vous bénéficiez d'un suivi aussi bien en terme de stratégie brand marketing, qu'au niveau de la concrétisation de chaque phase de votre projet.
+Nous développons pour vous des chartes graphiques qui permettront à votre stratégie de communication visuelle.
+Votre charte graphique doit inspirer confiance, valoriser vos valeurs et messages, pour vous aider à développé votre notoriété, votre visibilité et augmenter votre chiffre d'affaires.
+nous créons votre identités graphiques à travers d'un logotype et sa déclinaison sur les différents supports de communication de l'entreprise qui sont flyer, carte de visite, plaquette, dépliantes, site internet note équipe travaille sur différents supports web-design et répond à des projets allant de conception du logo, la réalisation de la charte graphique de votre site interne, impression numérique quel que soit le format d'impression et le type de support souhaité,céation et montage de vidéo pour votre entreprise
+</p>
+{% endblock%}
